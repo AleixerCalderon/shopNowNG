@@ -9,6 +9,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { ProductosComponent } from './productos/productos.component';
+import { FormsModule } from '@angular/forms';
 
 // import {MatToolbarModule} from '@angular/material/toolbar';
 // import {MatIconModule} from '@angular/material/icon';
@@ -33,7 +34,8 @@ import { ProductosComponent } from './productos/productos.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule
     // MatButtonModule,
     // MatTableModule
   ],

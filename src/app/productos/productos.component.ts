@@ -23,6 +23,9 @@ const DATA: Producto[] = [
 export class ProductosComponent implements OnInit {
    
   productos: Array<Producto> = DATA; 
+  producto: Producto = new Producto(0,"",0,0);
+  verFormulario: boolean = false;
+  mg:string = "";
 
   constructor() { }
 
@@ -32,6 +35,16 @@ export class ProductosComponent implements OnInit {
 
   eliminarProducto(id: number){      
     this.productos = this.productos.filter(e=>e.Id != id);
+  }
+
+  agregarProducto(){
+    this.mg = "";
+    if (this.producto.Nombre.length>0  && this.producto.Valor >0  && this.producto.Cantidad > 0) {      
+      this.productos.push(this.producto);
+      this.producto = new Producto(0,"",0,0);
+    } else {
+         this.mg = "Faltan datos";
+    }
   }
 
 }

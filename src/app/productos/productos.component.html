@@ -1,4 +1,16 @@
 <h1>Productos</h1>
+
+<button (click)="verFormulario = !verFormulario">Mostrar Formulario Producto</button>
+
+<div *ngIf="verFormulario">
+    <label >Nombre</label>   <input type="text" [(ngModel)]="producto.Nombre">
+    <label >Valor</label>    <input type="text" [(ngModel)]="producto.Valor">
+    <label >Cantidad</label> <input type="text" [(ngModel)]="producto.Cantidad">
+    <button (click)="agregarProducto()">Agregar</button>
+</div>
+<h3 >{{ mg.length > 0? mg : ""}}</h3>
+
+
 <table>
     <thead>
         <tr>
