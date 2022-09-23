@@ -10,14 +10,11 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
-import { ProductoComponent } from './producto/producto.component';
-import { ProductosComponent } from './productos/productos.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ProductoComponent,
-    ProductosComponent
+    AppComponent
+
   ],
   imports: [
     BrowserModule,
