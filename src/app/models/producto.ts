@@ -4,7 +4,6 @@ export class Producto {
         public Nombre: string,
         public Valor: number,
         public Cantidad: number
-    ){
-
+    ){        
     }
 }
