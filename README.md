@@ -8,8 +8,8 @@ Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-
 ## Servidor de desarrollo
 # Crear la aplicación inicial
 Desde una consola:
--- Navegar a la carpeta donde se desee crear la aplicación
--- Agregar el comando `ng new nombreApp`  la cual crear la aplicación  
+- Navegar a la carpeta donde se desee crear la aplicación
+- Agregar el comando `ng new nombreApp`  la cual crear la aplicación  
 
 # Ejecutar la aplicación
 Ejecutar `ng serve` para un servidor dev. Navegar a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambia alguno de los archivos de origen.
